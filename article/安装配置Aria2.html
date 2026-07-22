@@ -12,9 +12,9 @@
 <title>安装配置Aria2 · 自我刻度</title>
 <link href="../uploads/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="../uploads/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/Private/article.css?v=29e7650ba32b" rel="stylesheet"/>
-<link href="/Private/site.css?v=8cc31286b3d1" rel="stylesheet"/>
-<script defer="" src="/Private/site.js?v=699d45c6706a"></script>
+<link href="../article.css?v=29e7650ba32b" rel="stylesheet"/>
+<link href="../site.css?v=b5863fc40874" rel="stylesheet"/>
+<script defer="" src="../site.js?v=699d45c6706a"></script>
 </head>
 <body class="article-page">
 <a class="skip-link" href="#main-content">跳到主要内容</a>
@@ -46,12 +46,12 @@
 </div>
 <div class="article-content" id="article-content">官网下载Aria2程序: https://aria2.github.io/
 <div>解压↓
-</div><div><img alt="安装配置Aria2 - 图片 1" decoding="async" fetchpriority="high" height="101" loading="eager" src="/Private/uploads/3b50f19d-fc19-445f-b62d-295ba92f3d0d.png" style="max-width:100%" width="554"/><br/></div><div>其实我们只需要其中的aria2c这个可执行文件，这就是最新64位版本的Aria2
+</div><div><img alt="安装配置Aria2 - 图片 1" decoding="async" height="101" loading="lazy" src="../uploads/3b50f19d-fc19-445f-b62d-295ba92f3d0d.png" style="max-width:100%" width="554"/><br/></div><div>其实我们只需要其中的aria2c这个可执行文件，这就是最新64位版本的Aria2
 </div><div>Aria2 相关下载-Windows 懒人包下载↓
 </div><div>http://211.143.146.215:82/1Q2W3E4R5T6Y7U8I9O0P1Z2X3C4V5B/aria2c.com/archiver/aria2.zip
-</div><div><img alt="安装配置Aria2 - 图片 2" decoding="async" height="107" loading="lazy" src="/Private/uploads/986f5588-3862-454f-aca3-65b534e52b92.png" style="max-width:100%" width="558"/><br/></div><div>这个可执行文件的作用是让你不用写命令行就可以运行Aria2，可以简单理解为 Aira2的启动器或快捷方式，添加到快捷启动栏后，需要下载时点击一下这个图标，Aria2就启动了。启动后会图标会现实中右下角的通知区域，不需要使用Aria2时，右键退出就行。</div><div><img alt="安装配置Aria2 - 图片 3" decoding="async" height="20" loading="lazy" src="/Private/uploads/555caedf-aa3a-46fc-9894-5b48acba7a63.png" style="max-width:100%" width="558"/><br/></div><div>所下载的Windows懒人包里的Aria2并不一定是最新版。所以要用官网下载的最新版aria2c.exe替换。或者也可以新建一个文件夹，把最新版的aria2c.exe、和黑色图标的aria2.exe放入，这个文件夹可视为绿色版的下载软件了，按照你的习惯放到软件存放目录。可以跟你的下载文件夹在不同盘符，没有影响的。
+</div><div><img alt="安装配置Aria2 - 图片 2" decoding="async" height="107" loading="lazy" src="../uploads/986f5588-3862-454f-aca3-65b534e52b92.png" style="max-width:100%" width="558"/><br/></div><div>这个可执行文件的作用是让你不用写命令行就可以运行Aria2，可以简单理解为 Aira2的启动器或快捷方式，添加到快捷启动栏后，需要下载时点击一下这个图标，Aria2就启动了。启动后会图标会现实中右下角的通知区域，不需要使用Aria2时，右键退出就行。</div><div><img alt="安装配置Aria2 - 图片 3" decoding="async" height="20" loading="lazy" src="../uploads/555caedf-aa3a-46fc-9894-5b48acba7a63.png" style="max-width:100%" width="558"/><br/></div><div>所下载的Windows懒人包里的Aria2并不一定是最新版。所以要用官网下载的最新版aria2c.exe替换。或者也可以新建一个文件夹，把最新版的aria2c.exe、和黑色图标的aria2.exe放入，这个文件夹可视为绿色版的下载软件了，按照你的习惯放到软件存放目录。可以跟你的下载文件夹在不同盘符，没有影响的。
 </div><div>添加aria2.session文件。这个文件记录了任务记录，必须在下载目标文件夹中。用记事本新建一个空白文件，然后另存为-，保存类型为：所有文件即可
-</div><div><img alt="安装配置Aria2 - 图片 4" decoding="async" height="103" loading="lazy" src="/Private/uploads/e51f9dd6-7d77-4bb1-bf64-5da111e479f1.png" style="max-width:100%" width="555"/><br/></div><div>把这个文件放到你的下载目标文件夹
+</div><div><img alt="安装配置Aria2 - 图片 4" decoding="async" height="103" loading="lazy" src="../uploads/e51f9dd6-7d77-4bb1-bf64-5da111e479f1.png" style="max-width:100%" width="555"/><br/></div><div>把这个文件放到你的下载目标文件夹
 </div><div>在Aria2软件存放文件夹，放置了两个可执行文件的那个。用记事本新建一个空白文件，然后另存为-aria2.conf，保存类型为：所有文件即可。
 </div><div>用记事本打开用aria2.conf，此时是空白的，粘贴如下代码，此代码引用自《Aria2 &amp; YAAW 使用说明》，按需修改保存即可。当中#号代表注释内容，删除了#号的注释项才会生效。
 </div><div>## '#'开头为注释内容, 选项都有相应的注释说明, 根据需要修改 ##
@@ -204,5 +204,5 @@
 </div>
 </div>
 </main>
-<script data-module-labels='{"投资思想": "投资与思想", "感悟反省": "感悟与反省", "技术网络": "技术与网络"}' data-search-content="../data/search-content.json?v=2863f1b003da" data-search-index="../data/search-index.json?v=fa5ff19da23a" defer="" src="/Private/article-search.js?v=6a8d19cfbe48"></script></body>
+<script data-module-labels='{"投资思想": "投资与思想", "感悟反省": "感悟与反省", "技术网络": "技术与网络"}' data-search-content="../data/search-content.json?v=2863f1b003da" data-search-index="../data/search-index.json?v=fa5ff19da23a" defer="" src="../article-search.js?v=6a8d19cfbe48"></script></body>
 </html>

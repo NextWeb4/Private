@@ -3,38 +3,41 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
 
-/
+/Private/
   Cache-Control: public, max-age=0, must-revalidate
 
-/index.html
+/Private/index.html
   Cache-Control: public, max-age=0, must-revalidate
 
-/about.html
+/Private/about.html
   Cache-Control: public, max-age=0, must-revalidate
 
-/404.html
+/Private/404.html
   Cache-Control: public, max-age=0, must-revalidate
 
-/article/*
+/Private/article/*
   Cache-Control: public, max-age=0, must-revalidate
 
-/module/*
+/Private/module/*
   Cache-Control: public, max-age=0, must-revalidate
 
-/site.css
+/Private/site.css
   Cache-Control: public, max-age=31536000, immutable
 
-/site.js
+/Private/site.js
   Cache-Control: public, max-age=31536000, immutable
 
-/article.css
+/Private/article.css
   Cache-Control: public, max-age=31536000, immutable
 
-/article-search.js
+/Private/article-search.js
   Cache-Control: public, max-age=31536000, immutable
 
-/data/*
+/Private/protected-article.js
   Cache-Control: public, max-age=31536000, immutable
 
-/uploads/*
+/Private/data/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/Private/uploads/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
